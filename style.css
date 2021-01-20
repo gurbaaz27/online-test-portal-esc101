@@ -1,0 +1,186 @@
+
+body {
+    background-color: #71b7ff;
+  
+  }
+  
+  h1 {
+    color: white;
+    text-align: center;
+  
+  }
+  input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=password], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  button {
+    background-color: orange; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    left-margin:10px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5px;
+  
+  }
+  button:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+  body  {
+    background-color: lightgrey;
+  }
+  p {
+    font-family: verdana;
+    font-size: 20px;
+  }
+  .container {
+    background-color: #3895D3;
+    width: 300px;
+    border-radius: 25px;
+    box-shadow: 10px 10px; 
+    padding: 50px;
+    padding-top: 10px;
+    margin: auto;
+  }
+  .oportal{
+      font-size: 50px;
+      color: orange;
+      font-family: "Comic Sans MS",cursive,sans-serif; 
+  }
+  .enterep{
+      text-align: center;
+      color: white;
+      font-size: 20px;
+      font-family: "Comic Sans MS",cursive,sans-serif;
+  }
+  .enterep:hover{
+      background-color:orange;
+      border-radius: 5px;
+      padding: 5px 10px;
+  }
+  #btnLogout{
+      float: right;
+  }
+  #testIdentity{
+      padding-top: 50px;
+  }
+  #MarksIdentity{
+    background-color: #3895D3;
+    width: 300px;
+    border-radius: 25px;
+    box-shadow: 10px 10px; 
+    padding: 50px;
+    padding-top: 10px;
+    margin: auto;
+  }
+  body {
+    margin: 0;
+  }
+  #btnLogout {
+    overflow: hidden;
+    background-color: #333;
+  }
+  #btnLogout a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  #testIdentity{
+    background-color: #3895D3;
+    width: 300px;
+    border-radius: 25px;
+    box-shadow: 10px 10px; 
+    padding: 50px;
+    padding-top: 10px;
+    margin: auto;
+  }
+  input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  #see{
+    background-color: #3895D3;
+    width: 300px;
+    border-radius: 25px;
+    box-shadow: 10px 10px; 
+    padding: 50px;
+    padding-top: 10px;
+    margin: auto;
+  }
+  #qid{
+    background-color: #3895D3;
+    width: 800px;
+    border-radius: 25px;
+    box-shadow: 10px 10px; 
+    padding: 50px;
+    padding-top: 10px;
+      padding-bottom: 10px;
+    margin: auto;
+    color: whitesmoke;
+    text-align: center;
+    font-style: "Times New Roman";
+    font-size: 25px;
+    text-shadow: 2px 2px;
+  }
+  #qq{
+    background-color: #A9A9A9;
+    width: 800px;
+    border-radius: 25px;
+    box-shadow: 10px 10px; 
+    padding: 50px;
+    padding-top: 10px;
+      padding-bottom: 10px;
+    margin: auto;
+    margin-top: 50px;
+    color: whitesmoke;  
+    text-align: center;
+    font-style: "Times New Roman";
+    font-size: 25px;
+  }
+  #opt2{
+      background-color:#696969;
+    width: 800px;
+    border-radius: 5px;
+    box-shadow: 10px 10px; 
+    margin: auto;
+    margin-top: 20px;
+    color: whitesmoke;  
+    text-align: left;
+    font-style: "Times New Roman";
+    font-size: 40px;
+  }
+  #myDIV button{
+    margin: 10px;
+  } 
+  #result h1{
+    color:blue;
+  }

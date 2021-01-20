@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+
+
+
+
+
+    <meta charset="utf-8">
+        <title>Firebase Web Quickstart</title>
+    <link href="main.css" rel="stylesheet">
+    <script src="http://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+</head>
+<body>
+
+<h1 class= "oportal" id="popo">Welcome To The Online Test Portal</h1>
+
+    <div class="container" id="jhc">
+    
+    <h2 class="enterep">Enter Your Credentials</h2>
+        <input id="txtEmail" type="email" placeholder="Email">
+        <br>
+        <br>
+        <input id="txtPassword" type="password" placeholder="Password">
+        <br>
+        <br>
+        <button id="btnLogin" class="btn btn-action">Log in</button>
+        <button id="btnSignUp" class="btn btn-secondary">Sign Up</button>
+    </div>	
+    <div id="btnLogout">	
+            <a> <button id="logout" onclick="refresh()">Logout</button></a>
+            <a> <button id="back" onclick="dash()">Back</button></a>
+    </div>
+        <h2 id="test_status"></h2>
+        <div id="test"></div>
+    <div id="s">
+    <button onclick="give()">GIVE QUESTION</button>
+    <button onclick="getques()">GET QUESTION</button>
+    <button onclick="rankList()">Show Marks List</button>
+    </div>
+                        <div id="testIdentity">
+                                <label for="testId" ></label>
+                                <br>
+                                <input type="text" id="testId" placeholder="Test Id" />
+                                <br>
+                                <br>
+                                <label for="noOfQues"></label>
+                                <input type="text" id="noOfQues"  placeholder="Number of Questions"/>
+                                <br>
+                                <br>
+                                <input type="text" id="tim"  placeholder="Enter time in minutes"/>
+                                <button onclick="gques()">Submit</button>
+                        </div>
+                        <div id="MarksIdentity">
+                                <br>
+                                <input type="text" id="marksId" placeholder="Test Id" />
+                                <br>
+                                <br>
+                                <button onclick="getmarks()">Submit</button>
+                        </div>
+                        <div id='pane'>
+                        <form id="myForm">
+
+                        <select id='numq'>
+                        </select>
+                        <br>
+                        <label for="question"></label>
+                        <input type="text" id="question" placeholder="Question"/>
+                        <br>
+                        <br>
+                        <label for="o1"></label>
+                        <input type="text" id="o1" placeholder="First Option"/>
+                        <br>
+                        <br>
+                        <label for="o2"></label>
+                        <input type="text" id="o2" placeholder="Second Option"/>
+                        <br>
+                        <br>
+                        <label for="o3"></label>
+                        <input type="text" id="o3" placeholder="Third Option"/>
+                        <br>
+                        <br>
+                        <label for="o4"></label>
+                        <input type="text" id="o4" placeholder="Fourth Option"/>
+
+                        <p>Enter correct option</p>							
+                          <input type="checkbox" name="vehicle" value="A">A
+                          <input type="checkbox" name="vehicle" value="B">B
+                          <input type="checkbox" name="vehicle" value="C">C
+                          <input type="checkbox" name="vehicle" value="D">D<br>
+                        
+
+                        </form>
+                        <br>
+                        <br>
+                        <button onclick="submit()">Submit</button>
+                        </div>
+<button onclick="next()" id="n">Enter another question</button>
+                        <div id="see">
+                            <label for="quesId"></label>
+                            <input type="text" id="quesId" placeholder="Type of Test" />
+                            <button onclick="quesDisplaying()">Submit</button>
+                        </div>
+                        <p id ="quesDisp"></p>
+<div id="finalDisp">
+
+<br>
+<br>
+<br>
+<br>
+<div>Time left = <span id="timer"></span></div>
+<div id="qid">
+    <label for="QID">Question ID</label>
+    <h2 id="QID"></h2>
+</div>
+<div id="qq">
+    <label for="Question">Question</label>
+    <h3 id="Question"></h3>
+</div>
+<ol>
+<form id="dispForm">
+<div id="opt2">
+        <input type='checkbox' name='choices' value='A'><p id="oo1"></p><br>
+</div>
+    <div id="opt2">
+        <input type='checkbox' name='choices' value='B'><p id="oo2"></p><br>
+    </div>
+    <div id="opt2">
+        <input type='checkbox' name='choices' value='C'><p id="oo3"></p><br>
+    </div>
+<div id="opt2">
+            <input type='checkbox' name='choices' value='D'><p id="oo4"></p><br>
+</div>
+</form>
+</ol>
+<button onclick="quesDisplaying()" id="nextq">Next Qusestion</button>
+<button onclick="save()">Save</button>
+<button onclick="finalSubmit()">Final Submit</button>
+</div>
+<div id="myDIV">
+</div>
+            <br>
+            <br>
+            <br>
+            <br>
+                <div id="result">
+                <h1>YOUR MARKS ARE </h1>
+                <p id="marks"></p>
+                <h1>YOUR PERCENTAGE IS</h1>
+                <p id="percentage"s></p>
+                <h1>YOUR RANK IS</h1>
+                <p id="rank"></p>
+                <h1>CLASS HIGHEST IS</h1>
+                <p id="high"></p>
+                <h1>CLASS AVERAGE IS</h1>
+                <p id="avg"></p>
+                        <h1>INCORRECT ANSWERS</h1>
+                        <table style="width:100%" id="incorAns">
+                         <tr>
+                            <td>Question Number</td>
+                                <td>Question</td>
+                            <td>Correct Answer</td>
+                          </tr>
+                        </table>
+                        <h1>LEFT QUESTIONS</h1>
+                        <table style="width:100%" id="leftAns">
+                         <tr>
+                            <td>Question Number</td>
+                            <td>Question</td>
+                            <td>Correct Answer</td>
+                          </tr>
+                        </table>
+                        <p id="g1"></p>
+                        <p id="g2"></p>
+                        <p id="g3"></p>
+                        <p id="g4"></p>
+                        <p id="g5"></p>
+                        <p id="g6"></p>
+                        <p id="g7"></p>
+                        <p id="g8"></p>
+                        <p id="g9"></p>
+            </div>	
+<p id="demo"></p>
+<p id="rews"></p>
+<p id="ps"></p>	
+<p id ="ar"></p>
+<p id="arname"></p>
+
+
+<br>
+<br>
+<br>
+<table style="width:100%" id="tab">
+<tr>
+<td>Serial no</td>
+<td>Marks</td>
+<td>Name</td>
+</tr>
+</table>
+
+
+
+
+
+
+    <script src="app.js"></script>
+    
+</body>
+</html>
